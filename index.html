@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/odin-lined.png">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <title>Form</title>
 </head>
 <body>
 
     <div class="container">
         <div class="image">
-            <img src="./img/clock.jpg" alt="" width="100%" height="100%">
+            <div class="image-content">
+                <img src="./img/odin-lined.png" alt="" width="18%" height="16%" >
+            <h4>ODIN</h4>
+            </div>
         </div>
         <div class="content">
             <div class="form">
@@ -21,46 +26,49 @@
                 </p>
                 <p class="want">You know you want to.</p>
 
-                <form action="">
+                <form action="" id="collector" name="collector">
                     <h4>Let's do this</h4>
 
-                    <div class="input-groups">
-                        <div class="input-left">
+                    <div class="input-groups" name="input-group">
+                        <div class="input-left" name="inputs">
                             <p>
                                 <label for="">FIRSTNAME:</label><br />
-                                <input type="text" autofocus>
+                                <input id="fName" type="text" name="firstname" autofocus>
                             </p>
                             <p>
                                 <label for="">EMAIL:</label><br />
-                                <input type="email">
+                                <input id="email" type="email" name="email">
                             </p>
                             <p>
                                 <label for="">PASSWORD:</label><br />
-                                <input type="password">
+                                <input id="password"  type="password" name="password">
                             </p>
                         </div>
                         <div class="input-right">
                             <p>
                                 <label for="">LASTNAME:</label><br />
-                                <input type="text">
+                                <input id="lName" type="text" name="lastname">
                             </p>
                             <p>
                                 <label for="">PHONE NUMBER:</label><br />
-                                <input type="number">
+                                <input id="phoneNo" type="number" name="phoneNo">
                             </p>
                             <p>
                                 <label for="">CONFIRM PASSWORD:</label><br />
-                                <input type="password">
+                                <input id="cPassword" type="password" name="cPassword">
                             </p>
                         </div>
                     </div>
 
-                    <button type="button">Create Account</button>
+                    <button type="button" onclick="HandleSubmit(document.collector)">Create Account</button>
+                    <button type="reset">Reset</button>
                     <p class="login">Aleady have an account?<a href="">Login</a></p>
                 </form>
             </div>
         </div>
     </div>
     
+
+    <script src="./script/main.js"></script>
 </body>
 </html>
