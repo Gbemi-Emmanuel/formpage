@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./img/odin-lined.png">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <title>Form</title>
+    <title>Maxify Form</title>
 </head>
 <body>
 
@@ -34,28 +34,34 @@
                             <p>
                                 <label for="">FIRSTNAME:</label><br />
                                 <input id="fName" type="text" name="firstname" autofocus>
+                                <span id="fnMessage"></span>
                             </p>
                             <p>
                                 <label for="">EMAIL:</label><br />
-                                <input id="email" type="email" name="email">
+                                <input id="email" type="email" name="email" title="'@' this is required!">
+                                <span id="emailMessage"></span>
                             </p>
                             <p>
                                 <label for="">PASSWORD:</label><br />
                                 <input id="password"  type="password" name="password">
+                                <span id="pwdMessage"></span>
                             </p>
                         </div>
                         <div class="input-right">
                             <p>
                                 <label for="">LASTNAME:</label><br />
                                 <input id="lName" type="text" name="lastname">
+                                <span id="lnMessage"></span>
                             </p>
                             <p>
                                 <label for="">PHONE NUMBER:</label><br />
                                 <input id="phoneNo" type="number" name="phoneNo">
+                                <span id="pnMessage"></span>
                             </p>
                             <p>
                                 <label for="">CONFIRM PASSWORD:</label><br />
                                 <input id="cPassword" type="password" name="cPassword">
+                                <span id="cPwdMessage"></span>
                             </p>
                         </div>
                     </div>
