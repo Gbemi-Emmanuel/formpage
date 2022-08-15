@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+}
+.image{
+    width: 30%;
+    height: 100vh;
+}
+
+.content{
+    width: 70%;
+    height: 100vh;
+}
+
+.content .form{
+    width: 90%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    font-weight: 600;
+}
+.form .want{
+    margin: 15px 0px 40px 0;
+}
+
+.input-groups{
+    display: inline-flex;
+    width: 100%;
+    margin: 0 auto;
+}
+.input-left{
+    width: 50%;
+}
+.input-right{
+    width: 50%;
+}
+label{
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+input{
+    border: none;
+    outline: none;
+    border-bottom: 0.3px solid lightblue;
+    width: 55%;
+    padding: 5px 10px;
+    font-weight: 500;
+}
+input:focus{
+    border: 1px solid lightblue;
+}
+form p{
+    margin: 5px;
+}
+button{
+    padding: 10px 20px;
+    background: lightblue;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    margin-top: 3%;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.login{
+    font-size: 11px;
+    margin-top: 20px;
+}
+.login a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 680px) {
+    .container{
+        display: block;
+    }
+    .container .image{
+        width: 100%;
+        height: 40vh;
+    }
+    .container .content{
+        width: 100%;
+    }
+    input{
+        width: 100%;
+    }
+}
